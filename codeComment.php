@@ -1,5 +1,6 @@
 <?php
     $text = $_POST['a'];
+    $text = str_replace("<std", "&lt;std");
     $text = str_replace("<!--" , "&lt;!--", $text);
     $text = str_replace("<url", "&lt;url", $text);
     $text = str_replace("</url", "&lt;/url", $text);
