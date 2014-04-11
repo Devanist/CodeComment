@@ -1,6 +1,7 @@
 <?php
     $text = $_POST['a'];
     $text = str_replace("<!--" , "&lt;!--", $text);
+    $text = str_replace("<url", "&lt;url", $text);
     $text = str_replace("<meta", "&lt;meta", $text);
     $text = str_replace("<html", "&lt;html", $text);
     $text = str_replace("<head", "&lt;head", $text);
