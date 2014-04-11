@@ -11,5 +11,7 @@
     $text = str_replace("</html", "&lt;html", $text);
     $text = str_replace("</head", "&lt;head", $text);
     $text = str_replace("<!DOCTYPE", "&lt;!DOCTYPE", $text);
+    $text = str_replace("<?php", "&lt;?php", $text);
+    $text = str_replace("?>", "?&gt;", $text);
     $_POST['a'] = $text;
 ?>
