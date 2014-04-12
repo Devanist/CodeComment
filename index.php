@@ -16,6 +16,9 @@
             <input type="submit" name="g" value="Click"/>
         </form>
         <hr>
-        <?php echo $text ?>
+        <?php if(isset($text)){
+            echo $text ;
+        }
+        ?>
     </body>
 </html>
