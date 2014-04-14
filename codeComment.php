@@ -28,6 +28,7 @@
         $text = str_replace("<nav", "&lt;nav", $text);
         $text = str_replace("<section", "&lt;section", $text);
         $text = str_replace("<summary", "&lt;summary", $text);
+        $text = str_replace("<div", "&lt;div", $text);
         $_POST['a'] = $text;
     }
 ?>
